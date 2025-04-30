@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,46 +5,178 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Approvals - Landing Page</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
+    /* Reset default margins and padding */
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
-    .container {
-      max-width: 800px;
-      margin: 50px auto;
-      padding: 20px;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    h1, h2 {
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f4f8;
       color: #333;
-    }
-    p {
-      color: #555;
       line-height: 1.6;
     }
+
+    /* Hero Section */
+    .hero {
+      background: #007BFF;
+      color: #fff;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background-color: #28a745;
+      color: #fff;
+      padding: 12px 20px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #218838;
+    }
+
+    /* Container for Content */
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    /* Contact Info Section */
     .contact-info {
       margin-top: 30px;
     }
+
     .contact-info p {
-      margin: 5px 0;
+      margin: 8px 0;
+      font-size: 1.1rem;
+    }
+
+    .contact-info strong {
+      font-weight: bold;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #333;
+      color: #fff;
+      margin-top: 40px;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .container {
+        width: 95%;
+        margin-top: 30px;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+      }
+
+      .btn {
+        padding: 10px 18px;
+        font-size: 1.1rem;
+      }
+
+      .contact-info p {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 0.9rem;
+      }
+
+      .btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 1.1rem;
+      }
+
+      h2 {
+        font-size: 1.6rem;
+      }
+
+      .container {
+        width: 100%;
+        padding: 15px;
+      }
+
+      .contact-info p {
+        font-size: 1rem;
+      }
+
+      footer {
+        font-size: 0.9rem;
+      }
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
+  <!-- Hero Section -->
+  <section class="hero">
     <h1>Welcome to Approvals</h1>
+    <p>Your trusted partner for fast and reliable approvals!</p>
+    <a href="#contact" class="btn">Contact Us</a>
+  </section>
 
+  <!-- Main Content -->
+  <div class="container">
     <h2>What We Do</h2>
     <p>
-      We help clients get fast, reliable approvals for a variety of services including planning permits, licenses, and business authorizations. Our expert team ensures your applications are handled with professionalism and speed.
+      We specialize in helping individuals and businesses quickly obtain necessary approvals for permits, licenses, and other important authorizations. Our expert team ensures that your applications are processed efficiently and professionally.
     </p>
 
-    <div class="contact-info">
+    <!-- Contact Information -->
+    <div class="contact-info" id="contact">
       <h2>Contact Us</h2>
       <p><strong>Phone:</strong> +1 (123) 456-7890</p>
       <p><strong>Email:</strong> contact@approvals.com</p>
@@ -53,5 +184,11 @@
     </div>
   </div>
 
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Approvals. All Rights Reserved.</p>
+  </footer>
+
 </body>
 </html>
+
